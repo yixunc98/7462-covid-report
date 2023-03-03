@@ -1,7 +1,7 @@
 Minnesota COVID Report
 ================
 
-Report last run: 2023-03-03 21:14:55
+Report last run: 2023-03-03 21:51:54
 
 ## Introduction
 
@@ -85,14 +85,14 @@ rate_data %>%
   xlab("7-day COVID-19 total cases per 100,000 people") +
   ylab(NULL) +
   theme_minimal() +
-  ggtitle("Distribution of county-level COVID-19 case rates, by state",
+  ggtitle("Distribution of county-level COVID-19 case rates",
           subtitle = paste("Latest data:", max(rate_data$date)))
 ```
 
 ![](README_files/figure-commonmark/unnamed-chunk-3-1.png)
 
 Here is a table of the 20 counties with the highest 7-day per 100,000
-COVID-19 case rates:
+COVID-19 case rates: try
 
 ``` r
 rate_data %>%
