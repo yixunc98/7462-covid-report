@@ -95,6 +95,7 @@ rate_data %>%
 ```
 
 Here is a table of the 20 counties with the highest 7-day per 100,000 COVID-19 case rates:
+try
 
 ```{r}
 rate_data %>%
