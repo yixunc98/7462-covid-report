@@ -19,7 +19,7 @@ library(lubridate)
 library(forcats)
 library(knitr)
 
-LAG_DAYS <- 7
+LAG_DAYS <- 8
 POP_DENOM <- 100000
 
 ## County populations (read from a local data file in this repo)
