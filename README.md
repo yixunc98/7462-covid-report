@@ -1,7 +1,7 @@
 Minnesota COVID Report
 ================
 
-Report last run: 2023-03-03 21:51:54
+Report last run: 2023-04-13 16:56:57
 
 ## Introduction
 
@@ -19,7 +19,7 @@ library(lubridate)
 library(forcats)
 library(knitr)
 
-LAG_DAYS <- 8
+LAG_DAYS <- 7
 POP_DENOM <- 100000
 
 ## County populations (read from a local data file in this repo)
@@ -106,25 +106,25 @@ rate_data %>%
   knitr::kable()
 ```
 
-| county        | state          |    pop | covid_rate |
-|:--------------|:---------------|-------:|-----------:|
-| Loving        | Texas          |    169 |       2367 |
-| Washington    | Mississippi    |  43909 |       1043 |
-| Clark         | Kansas         |   1994 |        802 |
-| Rolette       | North Dakota   |  14176 |        705 |
-| Menominee     | Wisconsin      |   4556 |        658 |
-| Neshoba       | Mississippi    |  29118 |        611 |
-| Rawlins       | Kansas         |   2530 |        593 |
-| Humphreys     | Mississippi    |   8064 |        570 |
-| Traverse      | Minnesota      |   3259 |        552 |
-| Dorchester    | South Carolina | 162809 |        527 |
-| Keweenaw      | Michigan       |   2116 |        520 |
-| Lawrence      | Mississippi    |  12586 |        509 |
-| Madison       | Mississippi    | 106272 |        472 |
-| Walthall      | Mississippi    |  14286 |        469 |
-| Franklin      | Mississippi    |   7713 |        454 |
-| Concho        | Texas          |   2726 |        440 |
-| Warren        | Mississippi    |  45381 |        427 |
-| Marion        | Mississippi    |  24573 |        427 |
-| Oglala Lakota | South Dakota   |  14177 |        423 |
-| Webster       | Mississippi    |   9689 |        413 |
+| county                   | state         |   pop | covid_rate |
+|:-------------------------|:--------------|------:|-----------:|
+| Major                    | Oklahoma      |  7629 |      10067 |
+| McIntosh                 | Oklahoma      | 19596 |       4241 |
+| Hansford                 | Texas         |  5399 |        704 |
+| Cimarron                 | Oklahoma      |  2137 |        702 |
+| Latimer                  | Oklahoma      | 10073 |        536 |
+| Harmon                   | Oklahoma      |  2653 |        528 |
+| Pecos                    | Texas         | 15823 |        487 |
+| Douglas                  | South Dakota  |  2921 |        479 |
+| Yoakum                   | Texas         |  8713 |        448 |
+| Haskell                  | Oklahoma      | 12627 |        443 |
+| Northwest Arctic Borough | Alaska        |  7621 |        420 |
+| Dewey                    | South Dakota  |  5892 |        390 |
+| Menifee                  | Kentucky      |  6489 |        385 |
+| Hyde                     | South Dakota  |  1301 |        384 |
+| Barnes                   | North Dakota  | 10415 |        384 |
+| Wirt                     | West Virginia |  5821 |        378 |
+| St. Croix                | Wisconsin     | 90687 |        371 |
+| Thurston                 | Nebraska      |  7224 |        360 |
+| Bethel Census Area       | Alaska        | 18386 |        354 |
+| Dewey                    | Oklahoma      |  4891 |        348 |
